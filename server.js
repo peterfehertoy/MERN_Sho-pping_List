@@ -15,6 +15,7 @@ mongoose.connect(db, {
     useUnifiedTopology: true
 });
  
+const port = process.env.PORT || 5000;
 mongoose.connection.on('connected', () => {
     console.log('Mongoose is connected!');
 });
