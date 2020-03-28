@@ -6,9 +6,6 @@ app.use(express.json());
 
 const items = require('./routes/api/items');
 
-
-
-
 // Connect to Mongo
 mongoose.connect(db, {
     useNewUrlParser: true,
@@ -22,3 +19,5 @@ mongoose.connection.on('connected', () => {
 
 // Use Routes
 app.use('/api/items', items);
+
+app.listen(port, () => console.log(`Server started on port ${port}`));

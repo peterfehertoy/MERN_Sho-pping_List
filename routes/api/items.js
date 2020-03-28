@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // Item Model
-const Item = require('../../models/item');
+const item = require('../../models/item');
 
 // ITT KÉRJÜK KI A MONGODB BŐL AZ ADATOKAT
 // @route   GET api/items
