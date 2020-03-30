@@ -1,7 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import AppNavbar from './components/appnavbar.js';
+import AppNavbar from './components/AppNavbar.js';
+
 function App() {
   return (
     <div className="App">
