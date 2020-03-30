@@ -31,14 +31,26 @@ export default class ShoppingList extends Component  {
                 >Add Item
                 </Button>
                 
-                {/*
+                
                 <ul class="list-group">
                     {items.map(({ id, name }) => (
-                        <li class="list-group-item">{name}</li>
+                        <li class="list-group-item"><Button
+                                className="remove-btn"
+                                color="danger"
+                                size="sm"
+                                onClick={() => {
+                                    this.setState(state => ({
+                                        items: state.items.filter(item => item.id !== id)
+                                    }));
+                                }}
+                            >
+                            &times;
+                            </Button>
+                            {name}</li>
                     ))} 
                 </ul>
-                    */}
-
+                    
+{/*   SZAR FOS HUGY
                 <ListGroup>
                     
                     <TransitionGroup className="shopping-list"> 
@@ -55,14 +67,14 @@ export default class ShoppingList extends Component  {
                                     }));
                                 }}
                             >
-                                &times;
+                            &times;
                             </Button>
                         {name}
                         </ListGroupItem>       
                            
                         ))}
                     </TransitionGroup>
-                </ListGroup>
+                </ListGroup> */}
             </Container>
         );
     }
